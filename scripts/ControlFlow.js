@@ -6,6 +6,7 @@ const space = 0.8;
 const plantRate = 2;
 let plantArea = space * 20 * (Math.pow(plantRate, weeks));
 
+//* Part 1, Week 1 plant area testing *//
 console.group("Week 1")
 if(plantArea > area * 0.8){
     console.log("Pruned - exceeding the capacity of the garden")
@@ -21,6 +22,7 @@ else{
 }
 console.groupEnd();
 
+//* Week 2 plant area testing *//
 console.group("Week 2")
 weeks++
 plantArea = space * 20 * (Math.pow(plantRate, weeks))
@@ -38,6 +40,7 @@ else{
 }
 console.groupEnd();
 
+//* Week 3 plant area testing *//
 console.group("Week 3")
 weeks++
 plantArea = space * 20 * (Math.pow(plantRate, weeks))
@@ -54,3 +57,5 @@ else{
     console.log("plantArea is: "+plantArea)
 }
 console.groupEnd();
+
+//* Part 2 *//
